@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Navbar = () => {
     return (
         <div className="navbar bg-primary">
@@ -6,13 +8,13 @@ const Navbar = () => {
                     SHOP RAPHA
                 </div>
                 <div className="d-flex">
-                    <button type="button" className="btn btn-primary">Home</button>
-                    <button type="button" className="btn btn-primary">About</button>
-                    <button type="button" className="btn btn-primary">Shop</button>
+                    <Link href="/"> <button type="button" className="btn btn-primary">Home</button></Link>
+                    <Link href="/about"><button type="button" className="btn btn-primary">About</button></Link>
+                    <Link href="/shop"><button type="button" className="btn btn-primary">Shop</button></Link>
 
                 </div>
             </div>
-        </div>
+        </div >
     );
 }
 
